@@ -1,0 +1,27 @@
+No exemplo em app.js, estou criando inserções e consultas simples no redis, e demonstrando a expiração do valor.
+
+Mais formas de trabalhar com cache no redis:
+
+Cache de objetos complexos: 
+Ao invés de apenas armazenar strings simples, você pode armazenar objetos JavaScript mais complexos. Isso pode envolver serializar e deserializar objetos para que possam ser armazenados e recuperados do Redis.
+
+Cache de listas ou conjuntos: 
+O Redis suporta não apenas strings, mas também listas e conjuntos. Isso pode ser útil para armazenar, por exemplo, uma lista de itens recentemente acessados ou um conjunto de tags associadas a um determinado recurso.
+
+Cache de valores numéricos: 
+Além de strings, o Redis também pode armazenar valores numéricos e realizar operações atômicas com eles, como incremento ou decremento.
+
+Configuração de TTL dinâmico: 
+Em vez de definir um tempo de expiração fixo, você pode querer definir o tempo de expiração com base em alguma lógica dinâmica, como a frequência de acesso a um determinado recurso.
+
+Invalidação de cache: 
+Implemente a lógica para invalidar ou atualizar o cache quando os dados subjacentes forem alterados. Isso pode ser feito utilizando chaves de expiração ou por meio de outros mecanismos como pub/sub do Redis.
+
+Monitoramento e logging: 
+Adicione logs para monitorar o desempenho do cache e identificar possíveis problemas, como taxas de acerto e erro, tempo de acesso ao cache, etc.
+
+Usar estratégias de cache avançadas: 
+Considere estratégias mais avançadas de cache, como cache-aside, cache-through ou cache-around, dependendo dos requisitos do seu aplicativo.
+
+Utilizar pipelines: 
+Para operações em lote ou sequências de comandos, você pode aproveitar os pipelines do Redis para reduzir a latência e melhorar o desempenho.
