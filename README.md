@@ -18,7 +18,7 @@ Para executar este projeto, você precisa ter o Node.js e o Redis instalados em 
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd node-redis-cache-example
+    cd node-redis-cache
     ```
 
 3. Instale as dependências do projeto:
